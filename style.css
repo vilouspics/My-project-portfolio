@@ -1,11 +1,14 @@
 :root {
   --primary-color: #517783;
   --secondary-color: #e9e3dc;
+  --tertiary-color: pink;
+  --quaternary-color: rgb(249, 109, 132);
+  --quinary-color: #3c4649;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  color: #1c2528;
+  color: var(--quinary-color);
   margin: 100px 0;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
@@ -15,7 +18,6 @@ h1,
 h2,
 h3 {
   font-weight: 300;
-  /* margin: 50px 5px 0 10px; */
 }
 
 h1 {
@@ -24,17 +26,15 @@ h1 {
 }
 
 h2 {
-  color: #3c4649;
   font-size: 40px;
 }
 
 h3 {
-  font-size: 24px;
-  /* opacity: 0.7; */
+  font-size: 30px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -45,11 +45,11 @@ p {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: pink;
+  color: var(--tertiary-color);
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgb(249, 109, 132);
+  color: var(--quaternary-color);
 }
 
 .primary-link {
@@ -63,7 +63,7 @@ p {
 }
 
 .primary-link:hover {
-  color: pink;
+  color: var(--tertiary-color);
 }
 
 .secondary-link {
@@ -82,15 +82,28 @@ p {
 }
 
 .content-container {
+  align-items: center;
   background-color: var(--secondary-color);
   border-radius: 4px;
+  padding: 50px;
+  display: flex;
 }
 
 .content p {
   margin: 50px 10px 0 10px;
 }
 
-.about-img {
+.introduction-content {
+  margin-top: 120px;
+}
+
+.introduction-paragraph {
+  position: relative;
+  padding: 26px 0 26px 26px;
+  border-left: 2px solid rgb(249, 109, 132);
+}
+
+.img-vicky {
   margin-top: 30px;
 }
 
@@ -150,29 +163,31 @@ footer .social-links a:hover {
   background-color: rgb(249, 109, 132);
 }
 
-@media (max-width: 667px) {
+@media (max-width: 1024px) {
   body {
     margin: 100px 20px;
   }
 
   h1 {
-    font-size: 26px;
+    font-size: 36px;
   }
 
-  h2,
+  h2 {
+    font-size: 24px;
+  }
   h3 {
     font-size: 18px;
-  }
-
-  .email-link,
-  .navbar-brand,
-  .navbar-toggler {
-    font-size: 16px;
   }
 
   p,
   .navigation-links,
   .primary-link {
+    font-size: 14px;
+  }
+
+  .email-link,
+  .navbar-brand,
+  .navbar-toggler {
     font-size: 14px;
   }
 
