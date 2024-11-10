@@ -113,15 +113,11 @@ p {
 
 .content-container {
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: rgba(235, 229, 224, 0.5);
   border-radius: 4px;
   padding: 50px;
   display: flex;
 }
-
-/* .content p {
-  margin: 50px 10px 0 10px;
-} */
 
 .introduction-content {
   margin-top: 120px;
@@ -140,6 +136,11 @@ p {
 .img-container img {
   display: block;
   /* filter: drop-shadow(0 0 30px rgba(249, 109, 132, 0.6)); */
+}
+
+.img-about {
+  border: 5px dotted rgba(235, 229, 224, 0.7);
+  padding: 15px;
 }
 
 .contact-button {
@@ -195,9 +196,9 @@ footer .email-link:hover {
   color: pink;
 } */
 
-footer .social-links a {
+.social-links a {
   text-decoration: none;
-  color: rgb(249, 109, 132);
+  color: var(--quaternary-color);
   background-color: var(--tertiary-color);
   font-size: 24px;
   padding: 15px;
@@ -206,7 +207,7 @@ footer .social-links a {
   transition: all 150ms ease-in-out;
 }
 
-footer .social-links a:hover {
+.social-links a:hover {
   color: var(--tertiary-color);
   background-color: var(--quaternary-color);
 }
@@ -216,6 +217,16 @@ footer .github-link {
   position: relative;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+
+.icons {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  background-color: var(--quaternary-color);
+  font-size: 20px;
+  padding: 14px 8px;
+  border-radius: 50%;
+  margin: 0 20px;
 }
 
 footer .github-link:hover {
