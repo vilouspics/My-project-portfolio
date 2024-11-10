@@ -15,14 +15,16 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-weight: 300;
 }
 
-h3,
+/* h3,
 h4 {
   font-weight: 400;
-}
+} */
 
 h1 {
   font-size: 94px;
@@ -199,7 +201,6 @@ footer .github-link {
   color: var(--tertiary-color);
   background-color: var(--quaternary-color);
   font-size: 18px;
-  /* padding: 15px 10px; */
   border-radius: 50%;
   margin-right: 10px;
   width: 48px;
@@ -227,6 +228,54 @@ footer .github-link::before {
 
 footer .github-link:hover::before {
   height: 100%;
+}
+
+body.contact-page .social-links div {
+  display: flex;
+  align-items: center; /* Vertikale Ausrichtung von Icon und Text */
+}
+
+body.contact-page .social-links h4 {
+  margin-right: 10px;
+}
+
+body.contact-page .social-links span {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+body.contact-page .social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+body.contact-page .social-links a {
+  text-decoration: none;
+  color: var(--quaternary-color);
+  background-color: var(--tertiary-color);
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 235ms ease-in-out;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+body.contact-page .social-links a:hover {
+  color: var(--tertiary-color);
+  background-color: var(--quaternary-color);
+  transform: translatey(2px);
+}
+
+body.contact-page .social-links i {
+  font-size: 36px;
+}
+
+body.contact-page .social-links span {
+  font-size: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -273,5 +322,9 @@ footer .github-link:hover::before {
 
   .icons {
     display: none;
+  }
+
+  body.contact-page .social-links a {
+    font-size: 16px;
   }
 }
