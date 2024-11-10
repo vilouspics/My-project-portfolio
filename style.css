@@ -80,6 +80,7 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  min-width: 120px;
 }
 
 .primary-link:hover {
@@ -197,7 +198,7 @@ footer .email-link:hover {
 footer .social-links a {
   text-decoration: none;
   color: rgb(249, 109, 132);
-  background-color: pink;
+  background-color: var(--tertiary-color);
   font-size: 24px;
   padding: 15px;
   border-radius: 50%;
@@ -206,8 +207,8 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: pink;
-  background-color: rgb(249, 109, 132);
+  color: var(--tertiary-color);
+  background-color: var(--quaternary-color);
 }
 
 footer .github-link {
