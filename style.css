@@ -27,22 +27,7 @@ h4 {
 h1 {
   font-size: 94px;
   font-family: "Over the Rainbow", cursive;
-}
-
-.h1-shadow-hp {
-  filter: drop-shadow(0 0 30px rgba(143, 126, 214, 0.9));
-}
-
-.h1-shadow-about {
-  filter: drop-shadow(0 0 30px rgba(249, 109, 132, 0.9));
-}
-
-.h1-shadow-projects {
-  filter: drop-shadow(0 0 30px rgba(255, 223, 93, 0.9));
-}
-
-.h1-shadow-contact {
-  filter: drop-shadow(0 0 30px rgba(81, 121, 133, 0.9));
+  color: var(--primary-color);
 }
 
 h2 {
@@ -77,16 +62,17 @@ p {
   border: none;
   padding: 15px 15px;
   text-decoration: none;
-  text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
   min-width: 120px;
   cursor: pointer;
+  transition: all 235ms ease-in-out;
 }
 
 .primary-link:hover {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
+  transform: translatey(2px);
 }
 
 .secondary-link {
@@ -117,7 +103,6 @@ p {
   align-items: center;
   background-color: rgba(235, 229, 224, 0.5);
   padding: 50px;
-  /* display: flex; */
 }
 
 .content2-container {
@@ -128,19 +113,13 @@ p {
   margin-top: 120px;
 }
 
-.introduction-paragraph {
-  position: relative;
-  padding: 26px 0 26px 26px;
-  border-left: 2px dotted rgba(143, 126, 214, 0.6);
-}
-
 .img-vicky {
   margin-top: 30px;
 }
 
 .img-about {
-  border: 5px dotted rgba(235, 229, 224, 0.7);
-  padding: 15px;
+  border: 5px dotted var(--primary-color);
+  padding: 10px;
 }
 
 .email-link {
@@ -198,7 +177,7 @@ p {
   padding: 15px;
   border-radius: 50%;
   margin: 0 20px;
-  transition: all 150ms ease-in-out;
+  transition: all 235ms ease-in-out;
   box-shadow: var(--box-shadow);
   cursor: pointer;
 }
@@ -206,6 +185,7 @@ p {
 .social-links a:hover {
   color: var(--tertiary-color);
   background-color: var(--quaternary-color);
+  transform: translatey(2px);
 }
 
 footer .github-link {
@@ -219,9 +199,14 @@ footer .github-link {
   color: var(--tertiary-color);
   background-color: var(--quaternary-color);
   font-size: 18px;
-  padding: 15px 10px;
+  /* padding: 15px 10px; */
   border-radius: 50%;
   margin-right: 10px;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .github-link:hover {
