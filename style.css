@@ -21,11 +21,6 @@ h4 {
   font-weight: 300;
 }
 
-/* h3,
-h4 {
-  font-weight: 400;
-} */
-
 h1 {
   font-size: 94px;
   font-family: "Over the Rainbow", cursive;
@@ -232,7 +227,7 @@ footer .github-link:hover::before {
 
 body.contact-page .social-links div {
   display: flex;
-  align-items: center; /* Vertikale Ausrichtung von Icon und Text */
+  align-items: center;
 }
 
 body.contact-page .social-links h4 {
